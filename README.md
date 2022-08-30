@@ -15,6 +15,10 @@
     limitations under the License.
  -->
 
+# Fork Project for Build Custom Elasticsearch Plugin
+- Default Branch: Pointing `releases/lucene-solr/8.8.2` that compatible with Elasticsearch v7.13.2
+- Maintainer: @eng-search
+
 # Apache Lucene and Solr
 
 Apache Lucene is a high-performance, full featured text search engine library
