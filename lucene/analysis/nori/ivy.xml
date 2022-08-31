@@ -26,7 +26,7 @@
 
   <dependencies>
     <dependency org="mecab" name="mecab-ko-dic" rev="${/mecab/mecab-ko-dic}" conf="mecab-ko-dic">
-      <artifact name="mecab-ko-dic" type=".tar.gz" url="https://bitbucket.org/eunjeon/mecab-ko-dic/downloads/mecab-ko-dic-2.0.3-20170922.tar.gz" />
+      <artifact name="mecab-ko-dic" type=".tar.gz" url="file:///opt/update-mecab-ko-dic.tar.gz" />
     </dependency>
     <exclude org="*" ext="*" matcher="regexp" type="${ivy.exclude.types}"/>
   </dependencies>

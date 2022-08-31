@@ -33,7 +33,7 @@
 
   <!-- default configuration for Korean: uses mecab-ko-dic -->
   <property name="dict.type" value="mecab-ko-dic"/>
-  <property name="dict.version" value="mecab-ko-dic-2.0.3-20170922" />
+  <property name="dict.version" value="update-mecab-ko-dic" />
 
   <property name="dict.src.file" value="${dict.version}.tar.gz" />
   <property name="dict.src.dir" value="${build.dir}/${dict.version}" />
