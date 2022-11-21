@@ -119,7 +119,7 @@ abstract class BinaryDictionaryWriter {
       String[] exprTokens = expression.split("\\+");
       for (String exprToken : exprTokens) {
         String[] tokenSplit = exprToken.split("/");
-        assert tokenSplit.length == 3;
+        assert tokenSplit.length == 3 : Arrays.toString(tokenSplit);
         String surfaceForm = tokenSplit[0].trim();
         if (surfaceForm.isEmpty() == false) {
           POS.Tag exprTag = POS.resolveTag(tokenSplit[1]);
@@ -164,7 +164,7 @@ abstract class BinaryDictionaryWriter {
         if (hasSinglePOS == false) {
           buffer.put((byte) morpheme.posTag.ordinal());
         }
-        if (posType != POS.Type.INFLECT) {
+        if (posType != POS.Type.INFLECT && posType != POS.Type.PREANALYSIS) {
           buffer.put((byte) morpheme.surfaceForm.length());
           compoundOffset += morpheme.surfaceForm.length();
         } else {
