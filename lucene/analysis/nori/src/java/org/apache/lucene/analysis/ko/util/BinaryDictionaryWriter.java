@@ -164,7 +164,7 @@ abstract class BinaryDictionaryWriter {
         if (hasSinglePOS == false) {
           buffer.put((byte) morpheme.posTag.ordinal());
         }
-        if (posType != POS.Type.INFLECT && posType != POS.Type.PREANALYSIS) {
+        if (posType != POS.Type.INFLECT) {
           buffer.put((byte) morpheme.surfaceForm.length());
           compoundOffset += morpheme.surfaceForm.length();
         } else {
